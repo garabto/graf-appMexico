@@ -1,0 +1,102 @@
+body {
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Panel de controles */
+.panel-controles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.control {
+  width: 250px;
+  text-align: center;
+}
+
+.control label, 
+.control p {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+/* Caja de la bandera */
+.bandera {
+  display: flex;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  border: 2px solid #333;
+  height: 300px;
+}
+
+.franja {
+  flex: 1;
+  transition: background-color 0.6s ease;
+}
+
+.verde {
+  background-color: #009900;
+}
+
+.blanca {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.roja {
+  background-color: #9D0000;
+}
+
+/* Escudo centrado */
+.escudo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.escudo img {
+  width: 120px;
+  height: auto;
+}
+
+/* Autores debajo */
+.autores {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+.autores p {
+  margin: 5px 0;
+}

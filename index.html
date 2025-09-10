@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bandera de México</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bandera de México</h1> 
+
+  <!-- Caja de controles -->
+  <div class="panel-controles">
+    
+    <!-- Controles Verde -->
+    <div class="control">
+      <label for="rangoVerde">Esperanza (Verde)</label>
+      <input type="range" class="form-range" min="0" max="255" id="greenRange" value="128">
+      <input type="text" id="hexVerde" readonly>
+    </div>
+
+    <!-- Controles Blanco -->
+    <div class="control">
+      <p>Color Blanco</p>
+      <input type="text" value="#FFFFFF" readonly>
+    </div>
+
+    <!-- Controles Rojo -->
+    <div class="control">
+      <label for="rangoRojo">Sangre de nuestros héroes nacionales (Rojo)</label>
+      <input type="range" class="form-range" min="0" max="255" id="redRange" value="128">
+      <input type="text" id="hexRojo" readonly>
+    </div>
+  </div>
+
+  <!-- Caja de bandera -->
+  <div class="bandera">
+    <div class="franja verde"></div>
+    <div class="franja blanca">
+      <div class="escudo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Coat_of_arms_of_Mexico.svg" alt="Escudo de México">
+      </div>
+    </div>
+    <div class="franja roja"></div>
+  </div>
+
+  <!-- Autores -->
+  <div class="autores">
+    <p>Autor 1: Yudith Martínez</p>
+    <p>Autor 2: Juan Pérez</p>
+    <p>Autor 3: Ana López</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
